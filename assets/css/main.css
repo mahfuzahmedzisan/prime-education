@@ -93,7 +93,7 @@ header .nav-link.active{
     color: var(--secondary-color);
     font-weight: 700;
 }
-.banner-section p{
+.banner-section q{
     color: var(--bg-primary-color);
 }
 
