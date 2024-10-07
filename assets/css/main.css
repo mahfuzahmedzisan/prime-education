@@ -192,9 +192,7 @@ header .nav-link.active{
 .feedback-section .feedback-item h5{
     cursor: pointer;
 }
-/* .feedback-section .feedback-item{
-    p
-} */
+
 .feedback-section h5{
     color: var(--primary-color);
 }
@@ -269,3 +267,129 @@ header .nav-link.active{
     font-size: 18px;
 }
 
+
+/* ==================================================
+    About Page
+================================================== */
+
+/* Banner Section  */
+
+.banner-section .banner-text p{
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+}
+.banner-section .banner-text a{
+    color: var(--text-secondary-color);
+    font-size: 1.2rem;
+}
+.banner-section .banner-text a:hover{
+    color: var(--secondary-color);
+}
+
+/* About Section  */
+
+.about-section .about-image span{
+    width: 0%;
+    height: 100%;
+    background-color: #00000088;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-section .about-image:hover span{
+    animation: toRight 0.5s forwards;
+}
+.about-section .about-image:hover img{
+    transform: scale(1.2);
+}
+.about-section .about-content h3 {
+    color: var(--primary-color);
+}
+.about-section .about-content h3 span{
+    color: var(--secondary-color);
+}
+.about-section .about-content p{
+    color: var(--text-primary-color);
+    line-height: 28px;
+    margin-bottom: .5rem;
+}
+.about-section .about-content p a{
+    color: var(--primary-color);
+}
+.about-section .about-content p a:hover{
+    color: var(--secondary-color);
+}
+
+/* Staftt Section */
+
+.staff-section .staff-item .image img{
+    min-height: 200px;
+    object-fit: cover;
+}
+.staff-section .staff-item .content{
+    background: linear-gradient(to bottom,#00214700, #002147 99%);
+    height: fit-content;
+}
+.staff-section .staff-item .content h4{
+    color: var(--secondary-color);
+}
+.staff-section .staff-item .content p{
+    color: var(--text-secondary-color);
+}
+.staff-section .staff-item .inner-content p{
+    color: var(--text-secondary-color);
+}
+.staff-section .staff-item .inner-content a{
+    color: var(--primary-color);
+    border-color: var(--primary-color) !important;
+}
+.staff-section .staff-item .inner-content a:hover{
+    color: var(--secondary-color);
+    border-color: var(--secondary-color) !important;
+}
+.staff-section .staff-item .content{
+    bottom: -35%;
+}
+.staff-section .staff-item:hover .content{
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(to bottom,#00214759 55%, #fdc60036);
+}
+.staff-section .staff-item .inner-content{
+    transform: translateY(150px);
+    opacity: 0;
+}
+.staff-section .staff-item:hover .inner-content{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Responsive  */
+@media (min-width: 768px) and (max-width: 992px){
+    .staff-section .staff-item .content{
+        bottom: -40%;
+        padding: auto 0 !important;
+    }
+    .staff-section .staff-item .content h4{
+        font-size: 20px !important;
+    }
+    .staff-section .staff-item .content p{
+        font-size: 16px !important;
+    }
+    .staff-section .staff-item .inner-content p{
+        font-size: 14px !important;
+    }
+    .staff-section .staff-item .inner-content a{
+        font-size: 14px !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .staff-section .staff-item .content{
+        bottom: -80px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .staff-section .staff-item .inner-content a{
+        font-size: 16px !important;
+    }
+}
